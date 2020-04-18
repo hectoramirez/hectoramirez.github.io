@@ -21,15 +21,18 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					 <header id="header">
-						<h1></h1>
-						<p></p>
-					</header> 
+				<header id="header" class="alt">
+                    <!--<h1></h1>
+                   <p></p>-->
+				</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<!--<li><a href="index.html" class="active">Home</a></li>-->
+							<li><a href="https://github.com/hectoramirez/Covid19" target="_blank" class="active">Source Code</a></li>
+							<li><a href="https://towardsdatascience.com/your-live-covid-19-tracker-with-airflow-and-github-pages-658c3e048304"
+								   target="_blank" class="active">Medium Story</a></li>
+							<li><a href="https://www.linkedin.com/in/harr/" target="_blank" class="active">Contact</a></li>
 						</ul>
 					</nav>
 
@@ -38,40 +41,31 @@
 
 						<!-- Content -->
 						
-							<section id="teaching" class="main">
+							<section id="covid" class="main">
 
 								<!-- Text -->
 								<section id="research" class="main special">
 									<header class="major">
 									<h2>Covid19 tracker</h2>
 									<p></p>
-									
 									</header>
-										<h3>
 
-											<p>Live data, updated daily from
-												<a class="back" target="_blank"  href="https://github.com/CSSEGISandData/COVID-19">this repository</a>,
-												using the code given in
-												<a class="back" target="_blank" href="https://github.com/hectoramirez/Covid19">here</a>.</p>
-										</h3>
-										<h4>
-											<p>By <a class="back" target="_blank"  href="https://www.linkedin.com/in/harr/">Héctor Ramírez</a>
-												<font color="gray">
-													&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp #FlattenTheCurve #StayHome</font> </p>
+									<p><strong>NEWS: <a class="back" target="_blank" href="https://www.bbc.com/news/world-asia-china-52321529">
+												China outbreak city Wuhan raises death toll by 50% (BBC)</a></strong>
+										&#8213 April 17th, 2020
+									</p>
+									<font color="gray"> #FlattenTheCurve #StayHome</font>
 
-										</h4>
 
-										<hr />
-										
 										<h2>Daily cases</h2>
 										
 										<section>
-											<iframe id="igraph" scrolling="yes" style="border:none;"
+											<iframe id="igraph_1" scrolling="yes" style="border:none;"
 													seamless="seamless"
 													src="Daily_confirmed.html"
 													height="625" width="100%" align="right" ></iframe>
 
-											<iframe id="igraph" scrolling="yes" style="border:none;"
+											<iframe id="igraph_2" scrolling="yes" style="border:none;"
 													seamless="seamless"
 													src="Daily_deaths.html"
 													height="625" width="100%" align="right" ></iframe>
@@ -83,22 +77,22 @@
 											deaths, recoveries and mortality rate</h2>
 										
 										<section>
-											<iframe id="igraph" scrolling="yes" style="border:none;"
+											<iframe id="igraph_3" scrolling="yes" style="border:none;"
 													seamless="seamless"
 													src="top_confirmed cases.html"
 													height="625" width="100%" align="right" ></iframe>
 
-											<iframe id="igraph" scrolling="yes" style="border:none;"
+											<iframe id="igraph_4" scrolling="yes" style="border:none;"
 													seamless="seamless"
 													src="top_deaths.html"
 													height="625" width="100%" align="right" ></iframe>
 
-											<iframe id="igraph" scrolling="yes" style="border:none;"
+											<iframe id="igraph_5" scrolling="yes" style="border:none;"
 													seamless="seamless"
 													src="top_recovered cases.html"
 													height="625" width="100%" align="right" ></iframe>
 
-											<iframe id="igraph" scrolling="yes" style="border:none;"
+											<iframe id="igraph"_6 scrolling="yes" style="border:none;"
 													seamless="seamless"
 													src="top_mortality.html"
 													height="625" width="100%" align="right" ></iframe>
@@ -108,12 +102,12 @@
 
 											<section>
 
-												<iframe id="igraph" scrolling="no" style="border:none;"
+												<iframe id="igraph_7" scrolling="no" style="border:none;"
 														seamless="seamless"
 														src="Geo_confirmed.html"
 														height="525" width="100%"></iframe>
 
-												<iframe id="igraph" scrolling="no" style="border:none;"
+												<iframe id="igraph_8" scrolling="no" style="border:none;"
 														seamless="seamless"
 														src="Geo_deaths.html"
 														height="525" width="100%"></iframe>
@@ -124,7 +118,7 @@
 										<p> 
 										
 										<section>
-											<p>We use live COVID19 data from the <a class="back" target="_blank" href="https://github.com/CSSEGISandData/COVID-19">GitHub data repository</a>
+											<p>We use the live COVID19 data from the <a class="back" target="_blank" href="https://github.com/CSSEGISandData/COVID-19">GitHub data repository</a>
 												for the 2019 Novel Coronavirus Visual Dashboard by the Johns Hopkins University Center for Systems Science and
 												Engineering (JHU CSSE).</p>
 									    </section>
@@ -132,7 +126,7 @@
 										<hr />
 										
 									</section>
-
+							</section>
 
 			</div>
 
@@ -144,6 +138,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			</div>
 	</body>
 </html>
