@@ -14,6 +14,29 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script type="text/javascript" async
+				src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+		</script>
+		<script type="text/x-mathjax-config">
+				MathJax.Hub.Config({
+  				TeX: { equationNumbers: { autoNumber: "all" },
+  					   Macros: {
+      							f:    ["{\\frac{#1}{#2}}",2],
+      							mk:   ["{\\left( #1 \\right)}",1],
+								kk:   ["{\\left[ #1 \\right]}",1],
+								ck:   ["{\\left\\{ #1 \\right\\}}",1],
+								Mpl:   "{M_{\\rm Pl}}",
+								diff: ["{\\frac{\\text{d}#1}{\\text{d}#2}}",2],
+								difs: ["{\\frac{\\text{d}^2 #1}{\\text{d}#2^2}}",2],
+								dif:   "{\\text{d}}",
+								logn:  "{\\text{ln\\,}}",
+								ie:    "{\\emph{i.e.}~}",
+								be:    "{\\begin{equation}}",
+								ee:    "{\\end{equation}}",
+								ba:    "{\\begin{aligned}}",
+								ea:    "{\\end{aligned}}"
+								} }});
+		</script>
 	</head>
 	<body>
 
@@ -122,8 +145,10 @@
 								On April 17th, <i>
 									<a class="back" target="_blank" href="https://www.bbc.com/news/world-asia-china-52321529">
 								China outbreak city Wuhan raised death toll by 50%</i> (BBC)</a>. As a consequence,
-									outliers of this type were removed &#8213 values larger than 2.5 std for each series
-									are replaced by the previous-day value minus the mean of the previous 7-day differences.
+									outliers of this type were removed &#8213 values whose distance from the mean
+									is larger than 5 \(\sigma\) are replaced by the previous-day value plus/minus the
+									mean of the previous 7-day direct differences depending on whether the trend is
+									rising/falling off.
 								</p>
 									
 						<hr>
