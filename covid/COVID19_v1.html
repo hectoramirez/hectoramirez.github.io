@@ -11,7 +11,6 @@
             <meta name="keywords" content="covid, coronavirus, tracker, statistics, data" />
             <meta name="author" content="Hector Ariel Ramirez Rodriguez"/>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -38,8 +37,6 @@
 								ea:    "{\\end{aligned}}"
 								} }});
 		</script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 
@@ -80,104 +77,55 @@
 
 						<!-- <h2>Geo visualizations</h2> -->
 						<br>
-						<br>
 
-						<ul class="nav nav-tabs">
-							<li class="active"><a data-toggle="tab" href="#conf-daily">New confirmed</a></li>
-							<li><a data-toggle="tab" href="#death-daily">New deaths</a></li>
-						</ul>
 
-						<div class="tab-content">
+						<iframe id="igraph_7" scrolling="no" style="border:none;"
+								seamless="seamless"
+								src="Geo_confirmed.html"
+								height="605" width="100%"></iframe>
 
-							<div id="conf-daily" class="tab-pane fade in active">
-
-								<iframe id="igraph_7" scrolling="no" style="border:none;"
-										seamless="seamless"
-										src="Geo_confirmed.html"
-										height="605" width="100%"></iframe>
-							</div>
-
-							<div id="death-daily" class="tab-pane fade">
-
-								<iframe id="igraph_8" scrolling="no" style="border:none;"
-										seamless="seamless"
-										src="Geo_deaths.html"
-										height="600" width="100%"></iframe>
-							</div>
+						<iframe id="igraph_8" scrolling="no" style="border:none;"
+								seamless="seamless"
+								src="Geo_deaths.html"
+								height="600" width="100%"></iframe>
 
 						<hr>
 
 						<h2>Daily cases</h2>
 
-						<ul class="nav nav-tabs">
-							<li class="active"><a data-toggle="tab" href="#conf-plot">Confirmed</a></li>
-							<li><a data-toggle="tab" href="#death-plot">Deaths</a></li>
-						</ul>
+						<iframe id="igraph_1" scrolling="yes" style="border:none;"
+								seamless="seamless"
+								src="Daily_confirmed.html"
+								height="625" width="100%" align="right" ></iframe>
 
-						<div class="tab-content">
-
-							<div id="conf-plot" class="tab-pane fade in active">
-
-								<iframe id="igraph_1" scrolling="yes" style="border:none;"
-										seamless="seamless"
-										src="Daily_confirmed.html"
-										height="625" width="100%" ></iframe>
-							</div>
-
-							<div id="death-plot" class="tab-pane fade">
-
-								<iframe id="igraph_2" scrolling="yes" style="border:none;"
-											seamless="seamless"
-											src="Daily_deaths.html"
-											height="625" width="100%" ></iframe>
-
-							</div>
-
-						</div>
+						<iframe id="igraph_2" scrolling="yes" style="border:none;"
+								seamless="seamless"
+								src="Daily_deaths.html"
+								height="625" width="100%" ></iframe>
 
 						<hr>
 
 						<h2>Top countries by: confirmed cases, deaths, recoveries and mortality rate</h2>
 
-						<ul class="nav nav-tabs">
-							<li class="active"><a data-toggle="tab" href="#conf-hist">Confirmed</a></li>
-							<li><a data-toggle="tab" href="#death-hist">Deaths</a></li>
-							<li><a data-toggle="tab" href="#recov-hist">Recoveries</a></li>
-							<li><a data-toggle="tab" href="#mort-hist">Mortality rate</a></li>
-						</ul>
-
-						<div class="tab-content">
-
-							<div id="conf-hist" class="tab-pane fade in active">
 								<iframe id="igraph_3" scrolling="yes" style="border:none;"
 										seamless="seamless"
 										src="top_confirmed cases.html"
 										height="625" width="100%" align="right" ></iframe>
-							</div>
 
-							<div id="death-hist" class="tab-pane fade">
 								<iframe id="igraph_4" scrolling="yes" style="border:none;"
 										seamless="seamless"
 										src="top_deaths.html"
 										height="625" width="100%" align="right" ></iframe>
-							</div>
-
-							<div id="recov-hist" class="tab-pane fade">
 
 								<iframe id="igraph_5" scrolling="yes" style="border:none;"
 										seamless="seamless"
 										src="top_recovered cases.html"
 										height="625" width="100%" align="right" ></iframe>
-							</div>
 
-							<div id="mort-hist" class="tab-pane fade">
-
-								<iframe id="igraph_6" scrolling="yes" style="border:none;"
+								<iframe id="igraph"_6 scrolling="yes" style="border:none;"
 										seamless="seamless"
 										src="top_mortality.html"
 										height="625" width="100%" align="right" ></iframe>
-							</div>
-						</div>
 
 						<hr>
 
