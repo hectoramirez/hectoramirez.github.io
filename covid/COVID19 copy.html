@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>COVID19 tracker</title>
+ 			<meta charset="utf-8" />
+            <meta name="keywords" content="covid, coronavirus, tracker, statistics, data" />
+            <meta name="author" content="Hector Ariel Ramirez Rodriguez"/>
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script type="text/javascript" async
+				src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+		</script>
+		<script type="text/x-mathjax-config">
+				MathJax.Hub.Config({
+  				TeX: { equationNumbers: { autoNumber: "all" },
+  					   Macros: {
+      							f:    ["{\\frac{#1}{#2}}",2],
+      							mk:   ["{\\left( #1 \\right)}",1],
+								kk:   ["{\\left[ #1 \\right]}",1],
+								ck:   ["{\\left\\{ #1 \\right\\}}",1],
+								Mpl:   "{M_{\\rm Pl}}",
+								diff: ["{\\frac{\\text{d}#1}{\\text{d}#2}}",2],
+								difs: ["{\\frac{\\text{d}^2 #1}{\\text{d}#2^2}}",2],
+								dif:   "{\\text{d}}",
+								logn:  "{\\text{ln\\,}}",
+								ie:    "{\\emph{i.e.}~}",
+								be:    "{\\begin{equation}}",
+								ee:    "{\\end{equation}}",
+								ba:    "{\\begin{aligned}}",
+								ea:    "{\\end{aligned}}"
+								} }});
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header" class="alt">
+				<!--<h1></h1>
+                <p></p>-->
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="https://github.com/hectoramirez/Covid19" target="_blank" class="active">Source Code</a></li>
+					<li><a href="https://towardsdatascience.com/your-live-covid-19-tracker-with-airflow-and-github-pages-658c3e048304"
+								   target="_blank" class="active">Medium Story</a></li>
+					<li><a href="https://www.linkedin.com/in/harr/" target="_blank" class="active">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Content -->
+				<section id="covid" class="main">
+
+					<!-- Text -->
+					<section id="research" class="main special">
+
+						<header class="major">
+							<h2>Covid-19 tracker</h2>
+						</header>
+
+						<font color="gray"> #FlattenTheCurve #StayHome</font>
+
+
+						<!-- <h2>Geo visualizations</h2> -->
+						<br>
+						<br>
+
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#conf-daily">New confirmed</a></li>
+							<li><a data-toggle="tab" href="#death-daily">New deaths</a></li>
+						</ul>
+
+						<div class="tab-content">
+
+							<div id="conf-daily" class="tab-pane fade in active">
+
+								<iframe id="igraph_7" scrolling="no" style="border:none;"
+										seamless="seamless"
+										src="Geo_confirmed.html"
+										height="605" width="100%"></iframe>
+							</div>
+
+							<div id="death-daily" class="tab-pane fade">
+
+								<iframe id="igraph_8" scrolling="no" style="border:none;"
+										seamless="seamless"
+										src="Geo_deaths.html"
+										height="600" width="100%"></iframe>
+							</div>
+
+						<hr>
+
+						<h2>Daily cases</h2>
+
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#conf-plot">Confirmed</a></li>
+							<li><a data-toggle="tab" href="#death-plot">Deaths</a></li>
+						</ul>
+
+						<div class="tab-content">
+
+							<div id="conf-plot" class="tab-pane fade in active">
+
+								<iframe id="igraph_1" scrolling="yes" style="border:none;"
+										seamless="seamless"
+										src="Daily_confirmed.html"
+										height="625" width="100%" ></iframe>
+							</div>
+
+							<div id="death-plot" class="tab-pane fade">
+
+								<iframe id="igraph_2" scrolling="yes" style="border:none;"
+											seamless="seamless"
+											src="Daily_deaths.html"
+											height="625" width="100%" ></iframe>
+
+							</div>
+
+						</div>
+
+						<hr>
+
+						<h2>Top countries by: confirmed cases, deaths, recoveries and mortality rate</h2>
+
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#conf-hist">Confirmed</a></li>
+							<li><a data-toggle="tab" href="#death-hist">Deaths</a></li>
+							<li><a data-toggle="tab" href="#recov-hist">Recoveries</a></li>
+							<li><a data-toggle="tab" href="#mort-hist">Mortality rate</a></li>
+						</ul>
+
+						<div class="tab-content">
+
+							<div id="conf-hist" class="tab-pane fade in active">
+								<iframe id="igraph_3" scrolling="yes" style="border:none;"
+										seamless="seamless"
+										src="top_confirmed cases.html"
+										height="625" width="100%" align="right" ></iframe>
+							</div>
+
+							<div id="death-hist" class="tab-pane fade">
+								<iframe id="igraph_4" scrolling="yes" style="border:none;"
+										seamless="seamless"
+										src="top_deaths.html"
+										height="625" width="100%" align="right" ></iframe>
+							</div>
+
+							<div id="recov-hist" class="tab-pane fade">
+
+								<iframe id="igraph_5" scrolling="yes" style="border:none;"
+										seamless="seamless"
+										src="top_recovered cases.html"
+										height="625" width="100%" align="right" ></iframe>
+							</div>
+
+							<div id="mort-hist" class="tab-pane fade">
+
+								<iframe id="igraph_6" scrolling="yes" style="border:none;"
+										seamless="seamless"
+										src="top_mortality.html"
+										height="625" width="100%" align="right" ></iframe>
+							</div>
+						</div>
+
+						<hr>
+
+						<h2>Data source:</h2>
+
+								<p>
+									We use the live COVID19 data from the
+									<a class="back" target="_blank" href="https://github.com/CSSEGISandData/COVID-19">
+										GitHub data repository</a>
+									for the 2019 Novel Coronavirus Visual Dashboard by the Johns Hopkins University
+									Center for Systems Science and Engineering (JHU CSSE).
+								</p>
+
+						<hr>
+
+						<h3>Notes:</h3>
+
+								<p>
+								On April 17th, <i>
+									<a class="back" target="_blank" href="https://www.bbc.com/news/world-asia-china-52321529">
+								China outbreak city Wuhan raised death toll by 50%</i> (BBC)</a>. As a consequence,
+									outliers of this type were removed &#8213 values whose distance from the mean
+									is larger than 5 \(\sigma\) are replaced by the previous-day value plus/minus the
+									mean of the previous 7-day direct differences depending on whether the trend is
+									rising/falling off.
+								</p>
+									
+						<hr>
+
+					</section>
+
+				</section>
+
+			</div>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+		</div>
+	</body>
+</html>
