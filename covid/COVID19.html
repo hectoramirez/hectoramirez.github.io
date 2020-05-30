@@ -40,6 +40,12 @@
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<httpProtocol>
+			<customHeaders>
+				<add name="Content-Security-Policy" value="frame-ancestors https://www.<preferredwebsitedomain>.com" />
+				<!-- Test this option as Chrome supports CSP now for Iframe opening-->
+			</customHeaders>
+		</httpProtocol>
 	</head>
 	<body>
 
@@ -102,7 +108,7 @@
 								<iframe id="igraph_02" scrolling="no" style="border:none;"
 										seamless="seamless"
 										src="Geo_deaths.html"
-										height="600" width="100%"></iframe>
+										height="605" width="100%"></iframe>
 							</div>
 						</div>
 
