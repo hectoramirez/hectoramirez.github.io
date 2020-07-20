@@ -2593,8 +2593,8 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
+		background-image: url("images/overlay.png"), url("../../images/photo2.jpg");
+		background-position: top right,							top right;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
@@ -2633,7 +2633,7 @@ input, select, textarea {
 
 		#header h1 {
 			color: rgba(255, 255, 255, 0.5);
-			font-size: 1.35em;
+			font-size: 1.7em;
 			line-height: 1.75em;
 			margin: 0;
 		}
